@@ -25,11 +25,11 @@ Event OnInit ()
 	raceController.  NewBreton = none 
 	raceController.  NewBretonVampire = none 
 
-	raceController.  NewDarkElf =  DES_HeadPartsAyleid
-	raceController.  NewDarkElfVampire = DES_HeadPartsAyleidandVampire
+	raceController.  NewDarkElf =  DES_HeadPartsSnowElf
+	raceController.  NewDarkElfVampire =  DES_HeadPartsSnowElfandVampire
 
-	raceController.  NewHighElf = DES_HeadPartsSnowElf
-	raceController.  NewHighElfVampire = DES_HeadPartsSnowElfandVampire
+	raceController.  NewHighElf = DES_HeadPartsAyleid
+	raceController.  NewHighElfVampire = DES_HeadPartsAyleidandVampire
 
 	raceController.  NewImperial = DES_HeadPartsAkaviri
 	raceController.  NewImperialVampire = DES_HeadPartsAkaviriandVampire  
