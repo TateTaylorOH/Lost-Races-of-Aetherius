@@ -2,20 +2,17 @@ Scriptname DES_LostRacesController extends Quest
 
 GenericRaceController Property raceController Auto 
 
-Formlist Property DES_HeadPartsAkaviri Auto
-Formlist Property DES_HeadPartsAkaviriandVampire Auto
-
-Formlist Property DES_HeadPartsAyleid Auto
-Formlist Property DES_HeadPartsAyleidandVampire Auto
-
 Formlist Property DES_HeadPartsDeepElf Auto
 Formlist Property DES_HeadPartsDeepElfandVampire Auto
 
 Formlist Property DES_HeadPartsSeaElf Auto
 Formlist Property DES_HeadPartsSeaElfandVampire Auto
 
-Formlist Property DES_HeadPartsSnowElf Auto
-Formlist Property DES_HeadPartsSnowElfandVampire Auto
+Formlist Property DES_HeadPartsAkaviri Auto
+Formlist Property DES_HeadPartsAkaviriandVampire Auto
+
+Formlist Property DES_HeadPartsAyleidandSnowElf Auto
+Formlist Property DES_HeadPartsAyleidandSnowElfandVampire Auto
 
 Event OnInit () 
 
@@ -25,11 +22,11 @@ Event OnInit ()
 	raceController.  NewBreton = none 
 	raceController.  NewBretonVampire = none 
 
-	raceController.  NewDarkElf =  DES_HeadPartsSnowElf
-	raceController.  NewDarkElfVampire =  DES_HeadPartsSnowElfandVampire
+	raceController.  NewDarkElf =  DES_HeadPartsDeepElf
+	raceController.  NewDarkElfVampire = DES_HeadPartsDeepElfandVampire
 
-	raceController.  NewHighElf = DES_HeadPartsAyleid
-	raceController.  NewHighElfVampire = DES_HeadPartsAyleidandVampire
+	raceController.  NewHighElf = DES_HeadPartsAyleidandSnowElf
+	raceController.  NewHighElfVampire = DES_HeadPartsAyleidandSnowElfandVampire
 
 	raceController.  NewImperial = DES_HeadPartsAkaviri
 	raceController.  NewImperialVampire = DES_HeadPartsAkaviriandVampire  
@@ -40,14 +37,14 @@ Event OnInit ()
 	raceController.  NewNord = none 
 	raceController.  NewNordVampire = none 
 
-	raceController.  NewOrc = none 
-	raceController.  NewOrcVampire = none 
+	raceController.  NewOrc = none
+	raceController.  NewOrcVampire = none
 
 	raceController.  NewRedguard = none 
 	raceController.  NewRedguardVampire = none 
 
 	raceController.  NewWoodElf = DES_HeadPartsSeaElf
-	raceController.  NewWoodElfVampire = DES_HeadPartsSeaElfandVampire
+	raceController.  NewWoodElfVampire =  DES_HeadPartsSeaElfandVampire
 
 	raceController.  proxyRaces () 
 
