@@ -17,11 +17,21 @@ Formlist Property DES_HeadPartsSeaElfVampire Auto
 Formlist Property DES_HeadPartsSnowElf Auto
 Formlist Property DES_HeadPartsSnowElfVampire Auto
 
+Race Property DES_AkaviriRace auto
+Race Property DES_AkaviriRaceVampire auto
+
 Event OnInit () 
 
 	raceController.  NewImperial = DES_HeadPartsAkaviri
 	raceController.  NewImperialVampire = DES_HeadPartsAkaviriVampire  
 
 	raceController.  proxyRaces () 
+
+	FormList FoodPoisoningImmuneRaces = Game.GetFormFromFile(0x000009AA, "ccQDRSSE001-SurvivalMode.esl") As FormList
+
+    if(FoodPoisoningImmuneRaces )
+        FoodPoisoningImmuneRaces.AddForm(DES_AkaviriRace)
+        FoodPoisoningImmuneRaces.AddForm(DES_AkaviriRaceVampire)
+    endif
 
 EndEvent
