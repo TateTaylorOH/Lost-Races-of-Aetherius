@@ -70,17 +70,15 @@ Event OnUpdateGameTime()
 			;add Stage 4 Vampire buffs and spells
 			VampireFeedReady.SetValue(3)
 			;VampireStageProgressionMessage.Show()
-			VampireStage4Message.Show()
+			;VampireStage4Message.Show()
 			VampireStatus = 4
 			VampireProgression(Game.GetPlayer(), 4)
-
-			; No we definitely hate level 4 vampires again
 
 				; REMOVING HATE ON LEVEL 4 VAMPIRE
 
 			;All NPCs  hate the evil Vampire
-			Game.GetPlayer().AddtoFaction(VampirePCFaction)
-			Game.GetPlayer().SetAttackActorOnSight()
+			;Game.GetPlayer().AddtoFaction(VampirePCFaction)
+			;Game.GetPlayer().SetAttackActorOnSight()
 
 			;/ 
 			int cfIndex = 0
@@ -498,7 +496,9 @@ Function VampireCure(Actor Player)
 	Player.RemoveSpell(VampireSunDamage04)
 	
 	Player.RemoveSpell(VampireCharm)
-	;Player.RemoveSpell(VampireCloak)
+	Player.RemoveSpell(VampireFear)
+      	Player.RemoveSpell(VampireHuntersSight)
+	Player.RemoveSpell(VampireCloak)
 	Player.RemoveSpell(VampireInvisibilityPC)	
 	
 	;Change player's race, defaults to Nord
