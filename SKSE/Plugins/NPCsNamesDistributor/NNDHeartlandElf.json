@@ -1,0 +1,128 @@
+{
+    "First": {
+        "Female": {
+            "Names": [
+                "Anurraame",
+                "Curano",
+                "Elanwe",
+                "Erraduure",
+                "Faranwe",
+                "Gandravanya",
+                "Lanath",
+                "Lanessa",
+                "Lannessa",
+                "Morilye",
+                "Neransi",
+                "Palolel",
+                "Urenenya",
+                "Valasha",
+                "Wynaldia",
+                
+                "Celethelel",
+                "Cenedelin",
+                "Filestis",
+                "Lirulorne",
+                "Lateesh",
+                "Narilmor",
+                "Nuralanya",
+                "Sandralath",
+                "Sariellen",
+                "Tjurhane"
+            ]
+        },
+        "Male": {
+            "Names": [
+                "Anumaril",
+                "Calinden",
+                "Celemaril",
+                "Ceyran",
+                "Darodiil",
+                "Endarre",
+                "Glinferen",
+                "Gordhaur",
+                "Haeliaran",
+                "Haromir",
+                "Hadhuul",
+                "Hergor",
+                "Houtern",
+                "Kagrenac",
+                "Laloriaran",
+                "Malyon",
+                "Morimath",
+                "Myndhal",
+                "Nilichi",
+                "Odilon",
+                "Ostarand",
+                "Umaril",
+                "Uluscant",
+                "Uuril",
+                "Valentis",
+                "Varondil",
+                "Norion",
+
+                "Celethelel",
+                "Cenedelin",
+                "Filestis",
+                "Lirulorne",
+                "Lateesh",
+                "Narilmor",
+                "Nuralanya",
+                "Sandralath",
+                "Sariellen",
+                "Tjurhane"
+            ]
+        }
+    },
+    "Last": {
+        "Male": {
+            "Chance": 20,
+            "Names": [
+                "Fenlord",
+                "Lord of Annihilation",
+                "Prince of Decay",
+                "the Fire King",
+                "the Flower King",
+                "the Sorcerer-King",
+
+                "Direnni",
+                "Dynar",
+                "Eater of Souls",
+                "Fyrre",
+                "Light-Bringer",
+                "of Copper and Tea",
+                "Prophet of Doom",
+                "Rulanyil",
+                "Scourge of Men",
+                "the Decayed",
+                "the Eternal",
+                "the Nameless One",
+                "the Ravager",
+                "the Shaper",
+                "the Singer",
+                "the Undying"
+            ]
+        },
+        "Female": {
+            "Chance": 20,
+            "Names": [
+                "Direnni",
+                "Dynar",
+                "Eater of Souls",
+                "Fyrre",
+                "Light-Bringer",
+                "of Copper and Tea",
+                "Prophet of Doom",
+                "Rulanyil",
+                "Scourge of Men",
+                "the Decayed",
+                "the Eternal",
+                "the Nameless One",
+                "the Ravager",
+                "the Shaper",
+                "the Singer",
+                "the Undying"
+            ]
+        }
+    },
+    "Shortened": ["First"]
+}

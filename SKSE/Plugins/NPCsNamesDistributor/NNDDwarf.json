@@ -1,0 +1,60 @@
+{
+    "First": {
+        "Female": {
+            "Names": [
+                "Bluthanch",
+                "Kamdida",
+                "Uurthehnchenthyalft",
+
+                "Bthuchard",
+                "Mhunvack"
+            ]
+        },
+        "Male": {
+            "Names": [
+                "Anchard",
+                "Brazzefk",
+                "Bthuand",
+                "Cuolec",
+                "Dahrk",
+                "Dhark",
+                "Dalen-Zanchu",
+                "Dumac",
+                "Duramac",
+                "Gharek",
+                "Ihlendam",
+                "Jnaggo",
+                "Kagrenac",
+                "Klathzgar",
+                "Klorgic",
+                "Mhuvnak",
+                "Mithas",
+                "Mzulchond",
+                "Mzunchend",
+                "Nbthld",
+                "Nchylbar",
+                "Nchunak",
+                "Nevith",
+                "Razak",
+                "Rkungthunch",
+                "Rourken",
+                "Sthovin",
+                
+                "Bthuchard",
+                "Mhunvack"
+            ]
+        }
+    },
+    "Last": {
+        "Any": {
+            "Chance": 5,
+            "Names": [
+                "Bagarn",
+                "Mezalf",
+                "Mzahnch",
+                "Stungnthumz"
+            ]
+        }
+    },
+    "Shortened": ["First"]
+}

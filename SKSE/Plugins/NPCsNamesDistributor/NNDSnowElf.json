@@ -1,0 +1,42 @@
+{
+    "First": {
+        "Female": {
+            "Names": [
+                "Amronal",
+                "Aumriel",
+                "Faire",
+                "Laianstil",
+                "Lilyarel"
+            ]
+        },
+        "Male": {
+            "Names": [
+                "Althadan",
+                "Angoth",
+                "Athring",
+                "Celegriath",
+                "Edhelbor",
+                "Engwe",
+                "Gelebor",
+                "Mirtil",
+                "Nirilor",
+                "Serenarth",
+                "Sidanyis",
+                "Vyrthur"
+            ]
+        }
+    },
+    "Last": {
+        "Any": {
+            "Chance": 5,
+            "Names": [
+                "Agarwen",
+                "Emeloth",
+                "of Irkngthand",
+                "of Moesring",
+                "of the Vale"
+            ]
+        }
+    },
+    "Shortened": ["First"]
+}

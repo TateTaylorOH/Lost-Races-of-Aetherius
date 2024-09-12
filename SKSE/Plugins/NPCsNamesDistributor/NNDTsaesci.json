@@ -1,0 +1,70 @@
+{
+    "First": {
+        "Female": {
+            "Names": [
+                "Feina",
+                "Jaiv",
+                "Kail",
+                "Kiasa",
+                "Vata",
+                "Vhysradue",
+                "Yuna"
+            ],
+            "Suffix": {
+                "Chance": 80,
+                "Names": [
+                    "-Darak",
+                    "-Perwa",
+                    "-Veda",
+                    "-Yora",
+                    "-Haraka"
+                ]
+            }
+        },
+        "Male": {
+            "Names": [
+                "Beloren",
+                "Dinieras",
+                "Ghelin",
+                "Haro",
+                "Kalien",
+                "Kail",
+                "Lein",
+                "Lin",
+                "Mishaxhi",
+                "Naio",
+                "Sadineras",
+                "Savirien",
+                "Sidrik",
+                "Sylaj",
+                "Vashu",
+                "Vershu",
+                "Versidue",
+                "Xhaferi",
+                "Vek"
+            ],
+            "Suffix": {
+                "Chance": 80,
+                "Names": [
+                    "-Ashak",
+                    "-Banar",
+                    "-Bardiek",
+                    "-Bhefeo",
+                    "-Brol",
+                    "-Chorak",
+                    "-Drassi",
+                    "-Kaie",
+                    "-Kor",
+                    "-Nashae",
+                    "-Pir",
+                    "-Shaie",
+                    "-Ves"
+                ]
+            }
+        }
+    },
+    "Last": {
+        "Inherit": true
+    },
+    "Shortened": ["First"]
+}
