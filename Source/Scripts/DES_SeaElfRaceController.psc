@@ -1,15 +1,15 @@
-Scriptname DES_AyleidController extends Quest  
+Scriptname DES_SeaElfRaceController extends Quest  
 
 GenericRaceController Property raceController Auto 
 
-Formlist Property DES_HeadPartsAyleid Auto
-Formlist Property DES_HeadPartsAyleidVampire Auto
+Formlist Property DES_HeadPartsSeaElf Auto
+Formlist Property DES_HeadPartsSeaElfVampire Auto
 
-Race Property DES_WildElfRace auto
-Race Property DES_WildElfRaceVampire auto
+Race Property DES_SeaElfRace auto
+Race Property DES_SeaElfRaceVampire auto
 
 Actor Property PlayerRef auto
-Spell Property Oakflesh auto
+Spell Property Sparks auto
 Quest Property MQ101 auto
 
 Event OnInit () 
@@ -22,16 +22,16 @@ Event OnInit ()
     RegisterForSingleUpdate(1.0)
   endIf
 
-	raceController.  NewHighElf = DES_HeadPartsAyleid
-	raceController.  NewHighElfVampire = DES_HeadPartsAyleidVampire
+	raceController.  NewWoodElf = DES_HeadPartsSeaElf
+	raceController.  NewWoodElfVampire =  DES_HeadPartsSeaElfVampire
 
 	raceController.  proxyRaces () 
 
 	FormList ExhaustionResistRacesMajor = Game.GetFormFromFile(0x000008A6, "ccQDRSSE001-SurvivalMode.esl") As FormList
 
     if(ExhaustionResistRacesMajor )
-        ExhaustionResistRacesMajor.AddForm(DES_WildElfRace)
-        ExhaustionResistRacesMajor.AddForm(DES_WildElfRaceVampire)
+        ExhaustionResistRacesMajor.AddForm(DES_SeaElfRace)
+        ExhaustionResistRacesMajor.AddForm(DES_SeaElfRaceVampire)
     endif
 
 EndEvent
@@ -51,7 +51,7 @@ endEvent
 
 Function dospells()
 	Race PlayerRace = PlayerRef.GetRace()
-	IF PlayerRace == DES_WildElfRace
-		PlayerRef.AddSpell(Oakflesh, false)
+	IF PlayerRace == DES_SeaElfRace
+		PlayerRef.AddSpell(Sparks, false)
 	ENDIF
 EndFunction

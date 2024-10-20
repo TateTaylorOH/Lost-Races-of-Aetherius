@@ -2,42 +2,56 @@ Scriptname DES_FalmerController extends Quest
 
 GenericRaceController Property raceController Auto 
 
-Formlist Property DES_HeadPartsAkaviri Auto
-Formlist Property DES_HeadPartsAkaviriVampire Auto
-
-Formlist Property DES_HeadPartsAyleid Auto
-Formlist Property DES_HeadPartsAyleidVampire Auto
-
-Formlist Property DES_HeadPartsDeepElf Auto
-Formlist Property DES_HeadPartsDeepElfVampire Auto
-
-Formlist Property DES_HeadPartsSeaElf Auto
-Formlist Property DES_HeadPartsSeaElfVampire Auto
-
-Formlist Property DES_HeadPartsSnowElf Auto
+Formlist Property HeadPartsHighElfSnow Auto
 Formlist Property DES_HeadPartsSnowElfVampire Auto
 
-Race Property DES_AkaviriRace auto
-Race Property DES_AkaviriRaceVampire auto
-
-Race Property DES_DeepElfRace auto
-Race Property DES_DeepElfRaceVampire auto
-
-Race Property DES_SeaElfRace auto
-Race Property DES_SeaElfRaceVampire auto
-
-Race Property DES_SnowElfRace auto
+Race Property SnowElfRace auto
 Race Property DES_SnowElfRaceVampire auto
 
-Race Property DES_WildElfRace auto
-Race Property DES_WildElfRaceVampire auto
+Actor Property PlayerRef auto
+Spell Property Frostbite auto
+Quest Property MQ101 auto
 
 Event OnInit () 
 
-	raceController.  NewHighElf = DES_HeadPartsSnowElf
+  if(SKSE.GetVersion() > 0)
+    ;debug.messagebox("yeskse")
+    RegisterForMenu("RaceSex Menu")
+  else
+	;debug.messagebox("no skse")
+    RegisterForSingleUpdate(1.0)
+  endIf
+
+	raceController.  NewHighElf = HeadPartsHighElfSnow
 	raceController.  NewHighElfVampire = DES_HeadPartsSnowElfVampire
 
 	raceController.  proxyRaces () 
 
+	FormList ExhaustionResistRacesMajor = Game.GetFormFromFile(0x000008A6, "ccQDRSSE001-SurvivalMode.esl") As FormList
+
+    if(ExhaustionResistRacesMajor)
+        ExhaustionResistRacesMajor.AddForm(SnowElfRace)
+        ExhaustionResistRacesMajor.AddForm(DES_SnowElfRaceVampire)
+    endif
+
 EndEvent
 
+Event OnUpdate()
+  if(MQ101.IsStageDone(80) || MQ101.GetStage() >= 80.0 || MQ101.IsCompleted() || MQ101.IsStopped())
+    doSpells()
+  else
+    RegisterForSingleUpdate(1.0)
+  endIf
+endEvent
+
+Event OnMenuClose(String MenuName)
+  Utility.Wait(0.25)
+  doSpells()
+endEvent
+
+Function dospells()
+	Race PlayerRace = PlayerRef.GetRace()
+	IF PlayerRace == SnowElfRace
+		PlayerRef.AddSpell(Frostbite, false)
+	ENDIF
+EndFunction
